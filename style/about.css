@@ -1,0 +1,40 @@
+.contenedorAbo {
+    display: grid;
+    /*Inicializar rejilla*/
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 2fr 2fr;
+}
+
+h1 {
+    color: #f1a600;
+}
+
+.hab {
+    grid-column: 1/span 2;
+}
+
+.hab>h2 {
+    padding-right: 10%;
+    z-index: 12;
+}
+
+.contenedorAbo div {
+    text-align: left;
+}
+
+.contenedorAbo div>h2 {
+    text-align: center;
+}
+
+.contenedorAbo div>h1 {
+    padding-left: 40%;
+}
+
+.contenedorAbo div>h3 {
+    padding-left: 10%;
+}
+
+#icon2 {
+    fill: yellowgreen;
+    background-color: #f1a600;
+}

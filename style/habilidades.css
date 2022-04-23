@@ -1,0 +1,48 @@
+.contenedorHab{
+    display: grid;/*Inicializar rejilla*/
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 2fr 2fr;
+}
+ h1{
+    color: #f1a600;
+}
+.hab{
+grid-column: 1/span 2;
+}
+.hab > h2{
+    padding-right: 10%;
+    z-index: 12;
+    
+    }
+.contenedorHab div{
+    text-align: left;
+}
+.contenedorHab div>h2{
+    text-align: center;
+}
+.contenedorHab div>h1{
+    padding-left:40% ;
+}
+.contenedorHab div>h3{
+    padding-left:10% ;
+}
+
+.item1Hab{
+    grid-column: 1;
+    z-index: 12;
+}
+.item3Hab, .item5Hab, .item7Hab, .item9Hab{
+    z-index: 12;
+}
+.item2Hab, .item4Hab, .item6Hab, .item8Hab,.item10Hab{
+    z-index: 12;
+}
+
+.fonHab{
+    position: absolute;
+}
+.fonHab >img{
+    height: 100%;
+    width: 110%;
+
+}
