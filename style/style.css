@@ -109,11 +109,16 @@ input#menu-hamburguesa:checked~ul {
 .social-icon-wrapper {
     margin-top: 1rem;
 }
+.icon{
+    margin: 30px;
+    width: 60px;
+    height: 60px;
+}
 
 .social-icon-wrapper>.icon {
     margin-right: 1rem;
     width: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 #personal-info-section {
@@ -153,11 +158,7 @@ input#menu-hamburguesa:checked~ul {
     grid-column: 1;
 }
 
-.item1,
-.item4,
-.item7 {
-    margin-left: 90%;
-}
+
 
 .item1 img,
 .item4 img,
@@ -166,11 +167,7 @@ input#menu-hamburguesa:checked~ul {
     width: 100px;
 }
 
-.item2,
-.item5,
-.item8 {
-    margin-left: 40%;
-}
+
 
 .item3,
 .item6,
@@ -389,6 +386,9 @@ footer {
     input#menu-hamburguesa~ul>li {
         padding-right: 2rem;
     }
+    a:checked {
+        right: 0;
+    }
     main {
         display: flex;
     }
@@ -476,4 +476,14 @@ footer {
         height: 50%;
         width: 50%;
     }
+}
+
+@media (max-width: 699px) {
+  
+    .item1,
+    .item4,
+    .item7 {
+        margin-left: 0%;
+    }
+
 }
