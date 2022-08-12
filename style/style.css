@@ -363,6 +363,7 @@ footer {
 }
 
 @media (min-width: 780px) {
+    
     h1 {
         font-size: 150px;
     }
@@ -484,6 +485,11 @@ footer {
     .item4,
     .item7 {
         margin-left: 0%;
+    }
+    .icon{
+        margin: 10px;
+        width: 30px;
+        height: 30px;
     }
 
 }
