@@ -64,7 +64,6 @@ input#menu-hamburguesa {
   display: none;
 }
 
-
 input#menu-hamburguesa ~ ul {
   font-family: semibold;
   font-size: 28px;
@@ -80,11 +79,9 @@ input#menu-hamburguesa ~ ul {
   z-index: 100;
 }
 
-
 input#menu-hamburguesa:checked ~ ul {
   right: 0;
 }
-
 
 #about-section {
   position: relative;
@@ -501,14 +498,24 @@ footer {
 }
 
 @media (max-width: 779px) {
-    input#menu-hamburguesa li a {
-        width:30px;
-        height:120px;
-        float:left;
-        border-right:2px solid #fff;
-        overflow: hidden;
-        }
-  
+  h1 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  .fonHab > img {
+    height: auto;
+    width: 210%;
+  }
+  input#menu-hamburguesa li a {
+    width: 30px;
+    height: 120px;
+    float: left;
+    border-right: 2px solid #fff;
+    overflow: hidden;
+  }
+
   .burger a {
     color: inherit;
     text-decoration: none;
@@ -521,7 +528,7 @@ footer {
     text-shadow: 1px 1px black;
     background-position: center;
   }
-  .burger{
+  .burger {
     text-align: center;
   }
 
