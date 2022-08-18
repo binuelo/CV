@@ -251,7 +251,7 @@ h1 {
 
 .fonHab > img {
   height: 100%;
-  width: 110%;
+  width: 100%;
 }
 
 /*Portafolio*/
@@ -499,7 +499,7 @@ footer {
 
 @media (max-width: 779px) {
   h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   h3 {
     font-size: 25px;
@@ -555,4 +555,11 @@ footer {
     width: 30px;
     height: 30px;
   }
+  .item1Hab,
+  .item3Hab,
+  .item5Hab,
+  .item7Hab,
+  .item9Hab {
+
+margin-right: 30px;}
 }
