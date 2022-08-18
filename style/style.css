@@ -60,8 +60,8 @@ nav > div img {
 }
 
 input#menu-hamburguesa {
-  /*visibility: hidden;*/
-  display: none;
+  visibility: hidden;
+  
 }
 
 input#menu-hamburguesa ~ ul {
@@ -250,8 +250,8 @@ h1 {
 }
 
 .fonHab > img {
-  height: 100%;
-  width: 100%;
+  height: 100px;
+  width: 100px;
 }
 
 /*Portafolio*/
@@ -498,15 +498,21 @@ footer {
 }
 
 @media (max-width: 779px) {
-  h1 {
-    font-size: 25px;
-  }
+    nav > div img {
+        width: 3rem;
+      }
+    #about-section {
+        padding: 30px 0px 60px;
+      }
+.contenedorHab h1 {
+        font-size: 50px;
+      }
   h3 {
     font-size: 25px;
   }
   .fonHab > img {
     height: auto;
-    width: 210%;
+    width: 160%;
   }
   input#menu-hamburguesa li a {
     width: 30px;
@@ -544,7 +550,10 @@ footer {
     transition: all 300ms linear;
     z-index: 100;
   }
-
+  .contenedorHab {
+    margin-bottom: 20px;
+  }
+  
   .item1,
   .item4,
   .item7 {
