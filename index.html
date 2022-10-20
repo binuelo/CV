@@ -1,210 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
 
-<body>
-    <nav>
-        <div>
-            <input type="checkbox" id="menu-hamburguesa">
-            <label for="menu-hamburguesa">
-                <img src="./assets/Íconos/menu 1.svg" alt="">
-            </label>
-            <ul class="burger">
-                <li class="cerrar"><a href="#about-section">Home</a></li>
-                <li><a href="#personal-info-section">Acerca de mi</a></li>
-                <li><a href="#about-section">Experiencia Practica</a></li>
-                <li><a href="#about-section">Mis habilidades</a></li>
-                <li><a href="#about-section">Portafolio</a></li>
-                <li><a href="#about-section">Contacto</a></li>
-            </ul>
-        </div>
+  <body>
+    <nav class="men">
+      <a class="principal" href="#about-section"></a>
+      <a href="#about-section">Home</a>
+      <a href="#personal-info-section">Acerca de mi</a>
+      <a href="#experiencia-info-section">Experiencia Practica</a>
+      <a href="#habilidades">Mis habilidades</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#Contacto">Contacto</a>
     </nav>
+    <button class="panel-btn hamburger hamburger--vortex" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <aside class="panel">
+      <nav class="menu">
+        <a class="principal" href="#about-section"></a>
+        <a href="#about-section">Home</a>
+        <a href="#personal-info-section">Acerca de mi</a>
+        <a href="#experiencia-info-section">Experiencia Practica</a>
+        <a href="#habilidades">Mis habilidades</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#Contacto">Contacto</a>
+      </nav>
+    </aside>
     <section id="about-section">
-        <div>
-            <h1>Omar CB.</h1>
-            <h3>
-                Desarrollador web full <span>stack developer</span>
-            </h3>
-            <h3><span>1 año</span> de
-                <br> experiencia
-            </h3>
+      <div>
+        <h1>Omar CB.</h1>
+        <h3>Desarrollador web full <span>stack developer</span></h3>
+        <h3>
+          <span>1 año</span> de <br />
+          experiencia
+        </h3>
 
-            <div class="social-icon-wrapper">
-                <a href="https://www.linkedin.com/in/omar-corona-bi%C3%B1uelo-53b944235" target="_blank"> <img class="icon" src="./assets/Íconos/cib_linkedin-in.svg" alt=""  ></a>
-                <a href=""> <img class="icon" src="./assets/Íconos/ant-design_instagram-filled.svg" alt="" ></a>
-                <a href="">  <img class="icon" src="./assets/Íconos/ant-design_twitter-outlined.svg" alt="" ></a>
-               <a href="https://github.com/binuelo/"  target="_blank"> <img class="icon" src="./assets/Íconos/icone-github-jaune.png" alt="" ></a>
-            </div>
+        <div class="social-icon-wrapper">
+          <a
+            href="https://www.linkedin.com/in/omar-corona-bi%C3%B1uelo-53b944235"
+            target="_blank"
+          >
+            <img class="icon" src="./assets/Íconos/cib_linkedin-in.svg" alt=""
+          /></a>
+          <a href="">
+            <img
+              class="icon"
+              src="./assets/Íconos/ant-design_instagram-filled.svg"
+              alt=""
+          /></a>
+          <a href="">
+            <img
+              class="icon"
+              src="./assets/Íconos/ant-design_twitter-outlined.svg"
+              alt=""
+          /></a>
+          <a href="https://github.com/binuelo/" target="_blank">
+            <img
+              class="icon"
+              src="./assets/Íconos/icone-github-jaune.png"
+              alt=""
+          /></a>
         </div>
-            
-        <img class="iconprofile" src="assets/Logos-Imágenes/foto.jpg" width="30%" height="90%"/>
+      </div>
+
+      <img
+        class="iconprofile"
+        src="assets/Logos-Imágenes/foto.jpg"
+        width="30%"
+        height="90%"
+      />
     </section>
     <section id="personal-info-section">
-        <h2>Acerca de mi</h2>
-        <p>
-            Mi nombre es Corona Biñuelo Omar y he desarrollado toda mi carrera
-            dedicado al mundo de la ingeniería en sistemas. Mi primera
-            experiencia la tuve en la <span>UTVM</span> posteriormente de la
-            mano de <span>Academlo</span> mas enfocado al desarrollo web.
-          </p>
+      <h2>Acerca de mi</h2>
+      <p>
+        Mi nombre es Corona Biñuelo Omar y he desarrollado toda mi carrera
+        dedicado al mundo de la ingeniería en sistemas. Mi primera experiencia
+        la tuve en la <span>UTVM</span> posteriormente de la mano de
+        <span>Academlo</span> mas enfocado al desarrollo web.
+      </p>
 
-        <div class="academic-wrapper">
-            <div class="academic-card">
-                <img src="./assets/Logos-Imágenes/utvm1.png" alt="">
-                <p>UTVM</p>
-                <p>Octubre 2013 - Abril 2017</p>
-            </div>
-            <div class="academic-card">
-                <img src="./assets/Logos-Imágenes/logo_academlo 51.png" alt="">
-                <p>Academlo</p>
-                <p>Diciembre 2021 - Julio 2022</p>
-            </div>
+      <div class="academic-wrapper">
+        <div class="academic-card">
+          <img src="./assets/Logos-Imágenes/utvm1.png" alt="" />
+          <p>UTVM</p>
+          <p>Octubre 2013 - Abril 2017</p>
         </div>
+        <div class="academic-card">
+          <img src="./assets/Logos-Imágenes/logo_academlo 51.png" alt="" />
+          <p>Academlo</p>
+          <p>Diciembre 2021 - Julio 2022</p>
+        </div>
+      </div>
     </section>
     <section id="experiencia-info-section">
-        <h2>Experiencia de Practicas</h2>
-        <div class="contenedor">
-            <div class="item1">
-                <img src="./assets/img/MB.png" alt="">
-            </div>
-            <div class="item2">
-                <h3>Maguey Blanco</h3>
-                <p>Ui Designer</p>
-                <p>Enero 2016 - Junio 2016</p>
-            </div>
-            <div class="item3">
-                <h3>6 meses</h3>
-            </div>
-            <div class="item4">
-                <img src="./assets/img/pemex.png" alt="">
-            </div>
-            <div class="item5">
-                <h3>Refineria M. Hidalgo</h3>
-                <p>UGP</p>
-                <p>Enero 2017- Junio 2017</p>
-            </div>
-            <div class="item6">
-                <h3>4 Meses</h3>
-            </div>
-            <div class="item7">
-                <img src="./assets/Logos-Imágenes/logo_academlo 51.png" alt="">
-            </div>
-            <div class="item8">
-                <h3>Academlo</h3>
-                <p>Desarrollador Web</p>
-                <p>Diciembre 2018-Julio 2022</p>
-            </div>
-            <div class="item9">
-                <h3>6 meses</h3>
-            </div>
-            <div class="barra"><img src="assets/Vectores/Group 35.svg"></div>
+      <h2>Experiencia de Practicas</h2>
+      <div class="contenedor">
+        <div class="item1">
+          <img src="./assets/img/MB.png" alt="" />
         </div>
+        <div class="item2">
+          <h3>Maguey Blanco</h3>
+          <p>Ui Designer</p>
+          <p>Enero 2016 - Junio 2016</p>
+        </div>
+        <div class="item3">
+          <h3>6 meses</h3>
+        </div>
+        <div class="item4">
+          <img src="./assets/img/pemex.png" alt="" />
+        </div>
+        <div class="item5">
+          <h3>Refineria M. Hidalgo</h3>
+          <p>UGP</p>
+          <p>Enero 2017- Junio 2017</p>
+        </div>
+        <div class="item6">
+          <h3>4 Meses</h3>
+        </div>
+        <div class="item7">
+          <img src="./assets/Logos-Imágenes/logo_academlo 51.png" alt="" />
+        </div>
+        <div class="item8">
+          <h3>Academlo</h3>
+          <p>Desarrollador Web</p>
+          <p>Diciembre 2021-Julio 2022</p>
+        </div>
+        <div class="item9">
+          <h3>6 meses</h3>
+        </div>
+        <div class="barra"><img src="assets/Vectores/Group 35.svg" /></div>
+      </div>
     </section>
     <section id="habilidades">
-        <div class="contenedorHab">
-            <div class="hab">
-                <h2>Mis Habilidades</h2>
-            </div>
-            <div class="item1Hab">
-                <h1>80%</h1>
-            </div>
-            <div class="item2Hab">
-                <h3>HTML5</h3>
-            </div>
-            <div class="item3Hab">
-                <h1>80%</h1>
-            </div>
-            <div class="item4Hab">
-                <h3>React (API´s)</h3>
-            </div>
-            <div class="item5Hab">
-                <h1>80%</h1>
-            </div>
-            <div class="item6Hab">
-                <h3>NodeJS</h3>
-            </div>
-            <div class="item7Hab">
-                <h1>50%</h1>
-            </div>
-            <div class="item8Hab">
-                <h3>JS</h3>
-            </div>
-            <div class="item9Hab">
-                <h1>80%</h1>
-            </div>
-            <div class="item10Hab">
-                <h3>Github</h3>
-            </div>
-            <div class="item7Hab">
-                <h1>50%</h1>
-            </div>
-            <div class="item8Hab">
-                <h3>Java</h3>
-            </div>
-            <div class="item9Hab">
-                <h1>80%</h1>
-            </div>
-            <div class="item10Hab">
-                <h3>Postman</h3>
-            </div>
-            <div class="item9Hab">
-                <h1>80%</h1>
-            </div>
-            <div class="item10Hab">
-                <h3>Paqueteria de Office (Word, Excel, Powert Point)
-                </h3>
-            </div>
-            
-            <div class="fonHab"><img src="assets/Vectores/Rectangle 34-1.svg" class="fonHab-Mobil"></div>
+      <div class="contenedorHab">
+        <div class="hab">
+          <h2>Mis Habilidades</h2>
         </div>
+        <div class="item1Hab">
+          <h1>80%</h1>
+        </div>
+        <div class="item2Hab">
+          <h3>HTML5 y CSS3</h3>
+        </div>
+        <div class="item3Hab">
+          <h1>80%</h1>
+        </div>
+        <div class="item4Hab">
+          <h3>React (API´s)</h3>
+        </div>
+        <div class="item5Hab">
+          <h1>80%</h1>
+        </div>
+        <div class="item6Hab">
+          <h3>NodeJS</h3>
+        </div>
+        <div class="item7Hab">
+          <h1>50%</h1>
+        </div>
+        <div class="item8Hab">
+          <h3>JS</h3>
+        </div>
+        <div class="item9Hab">
+          <h1>80%</h1>
+        </div>
+        <div class="item10Hab">
+          <h3>Github</h3>
+        </div>
+        <div class="item7Hab">
+          <h1>50%</h1>
+        </div>
+        <div class="item8Hab">
+          <h3>Java</h3>
+        </div>
+        <div class="item9Hab">
+          <h1>80%</h1>
+        </div>
+        <div class="item10Hab">
+          <h3>Postman</h3>
+        </div>
+        <div class="item9Hab">
+          <h1>80%</h1>
+        </div>
+        <div class="item10Hab">
+          <h3>Paqueteria de Office (Word, Excel, Powert Point)</h3>
+        </div>
+
+        <div class="fonHab">
+          <img src="assets/Vectores/Rectangle 34-1.svg" class="fonHab-Mobil" />
+        </div>
+      </div>
     </section>
     <section id="portafolio">
-
-        <div class="contenedorPor">
-            <h2>Mi Portafolio</h2>
-            <div class="item1Por">
-                <a href="https://poke-api-nu.vercel.app/" target="_blank" rel="noopener noreferrer" class="pokeapi"><img src="assets/img/PokeApi.png" alt="" srcset=""></a>
-                <br> PokeApi
-            </div>
-            <div class="item2Por">
-                <a href="https://crud-6kuet0pv2-binuelo.vercel.app/"  target="_blank" class="CRUD">
-                    <img src="assets/img/CRUD.png" alt="">
-                </a><br>CRUD
-                
-            </div>
-            <div class="item3Por">
-                <img src="assets/Logos-Imágenes/image 9-1.jpg" alt="">
-                <p><br>Personal Writter</p>
-            </div>
+      <div class="contenedorPor">
+        <h2>Mi Portafolio</h2>
+        <div class="item1Por">
+          <a
+            href="https://poke-api-nu.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="pokeapi"
+            ><img src="assets/img/PokeApi.png" alt="" srcset=""
+          /></a>
+          <br />
+          PokeApi
         </div>
+        <div class="item2Por">
+          <a
+            href="https://crud-6kuet0pv2-binuelo.vercel.app/"
+            target="_blank"
+            class="CRUD"
+          >
+            <img src="assets/img/CRUD.png" alt="" /> </a
+          ><br />CRUD
+        </div>
+        <div class="item3Por">
+          <img src="assets/Logos-Imágenes/image 9-1.jpg" alt="" />
+          <p><br />in process.....</p>
+        </div>
+      </div>
     </section>
     <section id="Contacto">
-        <div class="contenedorCont">
-            <div class="Cont">
-                <h2>Contacto</h2>
-            </div>
-            <div class="item1Cont">
-                <img src="assets/Íconos/phone 3.svg" alt="">
-                <p>Número Celular</p>
-                <p>771-535-4135</p>
-            </div>
-            <div class="item2Cont">
-                <img src="assets/Íconos/mail 3.svg" alt="">
-                <p>email</p>
-                <p>o.corona161193@gmail.com</p>
-            </div>
+      <div class="contenedorCont">
+        <div class="Cont">
+          <h2>Contacto</h2>
         </div>
+        <div class="item1Cont">
+          <img src="assets/Íconos/phone 3.svg" alt="" />
+          <p>Número Celular</p>
+          <p>771-535-4135</p>
+        </div>
+        <div class="item2Cont">
+          <img src="assets/Íconos/mail 3.svg" alt="" />
+          <p>email</p>
+          <p>o.corona161193@gmail.com</p>
+        </div>
+      </div>
     </section>
     <footer>
-        <h3>Hecho con ❤ Academlo</h3>
+      <h3>Hecho con ❤ COBI</h3>
     </footer>
-</body>
-
+    <script src="JS/index_dom.js" type="module"></script>
+  </body>
 </html>

@@ -1,6 +1,14 @@
 :root {
   --main-color: #1f1d2c;
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --main-colo:#f7df1e;
+  --second-color:#222;
+  --main-modal-color:rgba(247,222,30,0.85);
+  --second-modal-color: #234567d2;
+  --main-colo: #1f1d2c;
   --accent-color: #f1a600;
+  --container-width: 1200px;
 }
 
 * {
@@ -44,6 +52,8 @@ body {
   background-image: url("../assets/Vectores/Rectangle 34.svg");
   background-repeat: no-repeat;
   background-position: right top;
+  margin: 0;
+    overflow-x: hidden;
 }
 
 nav {
@@ -53,39 +63,111 @@ nav {
   padding: 0.5rem 1.25rem;
   background-color: transparent;
   height: 50px;
+  
 }
 
 nav > div img {
-  width: 1.5rem;
+  width: 2rem;
 }
-li a{
+a{
   color: antiquewhite;
   text-decoration:none;
 }
-
-input#menu-hamburguesa {
- /* display: none;*/
-  visibility: hidden;
+header{
+  position: sticky; /*brindar un comportamiento fijo al llegar al posicionamiento de  top */
+  top: 0;
+  padding: 1rem;
+  background-color: var(--main-color);
+  color: var(--second-color);
 
 }
-
-input#menu-hamburguesa ~ ul {
-  font-family: semibold;
-  font-size: 28px;
-  color: #f1a600;
-  background-color: rgba(255, 255, 255, 0.008);
-  border: 0.1rem rgba(255, 255, 255, 1.18);
-  width: 100%;
-  list-style: none;
-  height: 100%;
-  position: absolute;
-  right: 100%;
-  transition: all 300ms linear;
-  z-index: 100;
+header h1{
+  margin: 0;
+  text-align: center;
+  
+}
+.principal{
+  margin-bottom: 50%;
+}
+.men{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.7rem 0rem;
+  background-color: transparent;
+  height: 50px;
+}
+.men a{
+  margin-right: 1.5rem;
+}
+.men a:hover{
+  text-decoration: none;
+  display: block;
+  padding: 2.5px 6px;
+  border-bottom: 2px solid #456789;
+  max-width: 300px;
+  background: #234567;
+  font-variant: small-caps;
+  text-shadow: 1px 1px black;
+  color: #fff;
 }
 
-input#menu-hamburguesa:checked ~ ul {
+.panel{
+  position:fixed;
+  z-index: 998; /*estar debajo del boton*/
+  /*aliner en posicion inicial estirando el elemnto para que toque todo los margenes*/
+  top:0;
+  bottom: 0;
+  left: 0;
   right: 0;
+  width: 100%;
+  background-color: var(--second-modal-color);
+  transition: transform .3s ease;
+  transform: translate(0,-100%);
+  
+  
+}
+.panel.is-active{
+  transform: translate(0,0);
+}
+.panel-btn{
+  position: fixed; /*posicionamiento fijo*/
+  z-index: 999; /*para jugar con el nvl de profundidad que da z-index*/
+  bottom: 1vh;
+  right: 1vw;
+  width: 4rem;
+  height: 4rem; 
+  border-radius: 50%; /*redondear boton*/
+  padding: 0;
+  display: flex; 
+  justify-content: center; /*centrar lineas de menu hamburguer*/
+  align-items: center; /*centrar lineas de menu hamburguer*/
+  background-color: var(--accent-color);
+  visibility: hidden;
+}
+.menu{
+  width: inherit; /*hereded de la clase padre*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;/*trabaja sobre Y */
+  align-items: center;/*trabaja sobre X */
+  text-align: center;
+}
+
+.menu a{
+  padding-top: 2rem;
+  width: inherit;
+  display: block; /*elementos de bloque*/
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--main-colo);
+  transition: all 0.3s ease;
+}
+
+menu a:hover{
+  font-weight: bold;
+  color:var(--main-colo);
+  background-color: var(--accent-color);
 }
 
 #about-section {
@@ -93,7 +175,7 @@ input#menu-hamburguesa:checked ~ ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 1.25rem;
+  
 }
 
 #about-section > div {
@@ -369,6 +451,8 @@ footer {
 }
 
 @media (min-width: 780px) {
+
+
   h1 {
     font-size: 150px;
   }
@@ -381,49 +465,24 @@ footer {
   p {
     font-size: 18px;
   }
-  label {
-    display: none;
-  }
-  input#menu-hamburguesa ~ ul {
-    position: static;
-    background-color: transparent;
-    display: flex;
-  }
-  input#menu-hamburguesa ~ ul > li {
-    padding-right: 2rem;
-  }
-  a:checked {
-    right: 0;
-  }
+
+ 
   /*---------*/
 
-  ul li a:hover {
-    text-decoration: none;
-    display: block;
-    padding: 2.5px 6px;
-    border-bottom: 2px solid #456789;
-    max-width: 300px;
-    background: #234567;
-    font-variant: small-caps;
-    text-shadow: 1px 1px black;
-    color: #fff;
-  }
   main {
     display: flex;
   }
   article {
     margin: 0.5rem;
   }
-  li {
-    font-size: 18px;
-  }
-  li:hover {
-    color: #f1a600;
-  }
+
   /*SOBRE MI*/
   #about-section {
     height: 500px;
+    
   }
+  
+ 
   .social-icon-wrapper > .icon {
     margin-right: 3rem;
     width: 60px;
@@ -498,6 +557,24 @@ footer {
 }
 
 @media (max-width: 779px) {
+  .men{
+    visibility: hidden;
+  }
+  .panel-btn{
+    visibility: visible;
+  }
+  .menu a{
+    color: #f1a600;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    border-bottom: 2px solid #456789;
+    max-width: 130%;
+    background: #234567;
+    font-variant: small-caps;
+    text-shadow: 1px 1px black;
+  }
+
     nav > div img {
         width: 3rem;
       }
@@ -514,7 +591,7 @@ footer {
     height: auto;
     width: 160%;
   }
-  input#menu-hamburguesa li a {
+  input#menuhamburguesa li a {
     width: 30px;
     height: 120px;
     float: left;
@@ -543,12 +620,12 @@ footer {
     color: #fff;
   }
 
-  input#menu-hamburguesa ~ ul {
+  input#menuhamburguesa ~ ul {
     height: 100%;
     position: absolute;
     right: 100%;
     transition: all 300ms linear;
-    z-index: 100;
+    z-index: 1000;
   }
   .contenedorHab {
     margin-bottom: 20px;
@@ -603,7 +680,7 @@ margin-right: 30px;}
     color: #fff;
   }
 
-  input#menu-hamburguesa ~ ul {
+  input#menuhamburguesa ~ ul {
     height: 100%;
     position: absolute;
     right: 100%;
